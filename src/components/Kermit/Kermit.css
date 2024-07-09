@@ -1,0 +1,10 @@
+.kermit{
+    width: 100%;
+    height: 400px;
+    margin-top: 45px;
+}
+.kermit img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
