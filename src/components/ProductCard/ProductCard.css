@@ -15,6 +15,7 @@
     cursor: pointer;
     padding: 20px 30px 35px 30px;
     display: flex;
+    position: relative;
     flex-direction: column;
     gap: 14px;
     transition: all 0.5s ease-in-out;
@@ -60,4 +61,28 @@
 .product-bottom button:hover{
     color: #f2f2f2;
     background-color: #D3D3D3;
+}
+.product-bottom button.selected{
+    background: linear-gradient(180deg, #89F09C 0%, #3CC755 100%);
+}
+.product-card button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    border: 1px solid #f2f2f2;
+    background: none;
+    border-radius: 8px;
+    color: #D3D3D3;
+    transition: all 0.5s ease-in-out;
+}
+.product-like{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.product-like button{
+    background: #FEF0F0;
 }

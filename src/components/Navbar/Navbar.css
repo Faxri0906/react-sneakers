@@ -1,6 +1,11 @@
 .navbar{
     padding: 32px 0;
     border-bottom: 1px solid #eaeaea;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(5px);
+    background-color: #ffffffb1;
+    z-index: 3;
 }
 .navbar-nav{
     display: flex;
