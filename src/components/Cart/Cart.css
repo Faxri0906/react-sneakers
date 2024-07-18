@@ -1,0 +1,115 @@
+.cart{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 4;
+    width: 350px;
+    height: 100%;
+    background: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s ease-in-out;
+}
+.cart.isOpen{
+    right: 0;
+}
+.cart h1{
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+}
+.cart .tax,.cart .total{
+    display: flex;
+    justify-content: space-between;
+}
+.border_b{
+    border-bottom: 1px dashed #dfdfdf;
+    flex: 1;
+}
+.cart-checkout{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 50px;
+}
+.cart-checkout button{
+    background: #9DD458;
+    color: white;
+    border: 0;
+    border-radius: 18px;
+    padding: 18px 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+}
+.cart-checkout button p{
+    margin-left: auto;
+    margin-right: 15%;
+}
+.cart-checkout button .arrow{
+    margin-right: 35px;
+}
+.cart-checkout button:hover{
+    background: red;
+    color: greenyellow;
+}
+.cart-products{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: auto;
+    margin-top: 30px;
+    gap: 20px;
+}
+.cart-product{
+    display: flex;
+    border: 1px solid #f3f3f3;
+    border-radius: 20px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.cart-product:hover{
+    box-shadow: 0px 10px 20px 0px #0000000a;
+    transform: translateY(-10px);
+}
+.cart-product__image{
+    width: 70px;
+    height: 70px;
+}
+.cart-product__image img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.cart-product__text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.cart-product__text h3{
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+}
+.cart-product__text p{
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+}
+.cart-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.X{
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+.X:hover{
+    color: red;
+}

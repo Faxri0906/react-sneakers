@@ -1,7 +1,7 @@
 import "./Navbar.css";
 import logo from "../../assets/images/logo.png";
 import { LuShoppingCart , LuHeart , LuUserCircle} from "react-icons/lu";
-function Navbar() {
+function Navbar({handleOpenNav}) {
   return (
     <header className="navbar">
       <nav className="navbar-nav container">
@@ -15,7 +15,7 @@ function Navbar() {
           </div>
         </div>
         <ul className="navbar-right">
-          <li>
+          <li onClick={handleOpenNav}>
             <LuShoppingCart size={18}/>
             <p>1205 руб.</p>
           </li>
